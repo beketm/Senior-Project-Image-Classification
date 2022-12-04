@@ -5,6 +5,6 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-EXPOSE 3000
-CMD ["uvicorn", "service:app", "--host", "0.0.0.0", "--port", "3000"]
+EXPOSE 80
+CMD ["uvicorn", "service:app", "--host", "0.0.0.0", "--port", "80"]
 
